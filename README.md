@@ -39,3 +39,9 @@ Provides:
 Provides:
 
 - `curl`
+
+### [iputils-ping](https://packages.ubuntu.com/bionic/iputils-ping)
+
+Provides:
+
+- `ping`
