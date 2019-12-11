@@ -51,3 +51,11 @@ Provides:
 Provides:
 
 - `iptables`
+
+## Notes
+
+Some tools require privileged permissions (e.g. `iptables`) so that you need the `--privileged` flag to start the container:
+
+```bash
+docker run -ti --privileged weibeld/ubuntu-networking
+```
