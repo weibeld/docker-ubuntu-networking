@@ -45,3 +45,9 @@ Provides:
 Provides:
 
 - `ping`
+
+### [iptables](https://netfilter.org/)
+
+Provides:
+
+- `iptables`
