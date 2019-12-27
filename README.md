@@ -52,6 +52,14 @@ Provides:
 
 - `iptables`
 
+### [nmap](https://nmap.org/)
+
+Provides:
+
+- `nmap`
+- `nping`
+- `ncat`
+
 ## Notes
 
 Some tools require privileged permissions (e.g. `iptables`) so that you need the `--privileged` flag to start the container:
