@@ -1,14 +1,14 @@
-# ubuntu-networking
+# weibeld/ubuntu-networking
 
 A Docker image with Ubuntu 18.04 LTS and common TCP/IP networking tools.
 
 👉 [GitHub](https://github.com/weibeld/docker-ubuntu-networking) 👈  👉 [Docker Hub](https://hub.docker.com/r/weibeld/ubuntu-networking) 👈 
 
-## Included packages
+## Included APT packages
 
 ### [net-tools](https://wiki.linuxfoundation.org/networking/net-tools)
 
-Provides:
+Provided tools:
 
 - `ifconfig`
 - `netstat`
@@ -17,18 +17,19 @@ Provides:
 
 ### [iproute2](https://wiki.linuxfoundation.org/networking/iproute2)
 
-Provides:
+Provided tools:
+
 - `ip`
 
 ### [netcat](https://packages.ubuntu.com/bionic/netcat)
 
-Provides:
+Provided tools:
 
 - `nc`
 
 ### [dnsutils](https://packages.ubuntu.com/bionic/dnsutils)
 
-Provides:
+Provided tools:
 
 - `host`
 - `dig`
@@ -36,33 +37,39 @@ Provides:
 
 ### [curl](https://packages.ubuntu.com/bionic/curl)
 
-Provides:
+Provided tools:
 
 - `curl`
 
 ### [iputils-ping](https://packages.ubuntu.com/bionic/iputils-ping)
 
-Provides:
+Provided tools:
 
 - `ping`
 
 ### [iptables](https://netfilter.org/)
 
-Provides:
+Provided tools:
 
 - `iptables`
 
 ### [nmap](https://nmap.org/)
 
-Provides:
+Provided tools:
 
 - `nmap`
 - `nping`
 - `ncat`
 
+### [tcpdump](https://packages.ubuntu.com/bionic/tcpdump)
+
+Provided tools:
+
+- `tcpdump`
+
 ## Notes
 
-Some tools require privileged permissions (e.g. `iptables`) so that you need the `--privileged` flag to start the container:
+Some tools require privileged permissions (e.g. `iptables`). In these cases, you need the add the `--privileged` flag to start the container:
 
 ```bash
 docker run -ti --privileged weibeld/ubuntu-networking
